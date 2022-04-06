@@ -1,0 +1,45 @@
+.key-correct {
+    background: #6fbd67;
+    color: #fff;
+  }
+  
+  .key-present {
+    background: #d8c15a;
+    color: #fff;
+  }
+  
+  .key-absent {
+    background: #8b8e8f;
+    color: #fff;
+  }
+  
+  .keyboard-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .keyboard-rows .row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  .keyboard-rows .row button {
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #d3d6da;
+    padding: 22px 18px;
+    border: none;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 500px) {
+    .keyboard-rows .row button {
+      border-radius: 5px;
+      padding: 16px 11px;
+    }
+  }
