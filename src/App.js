@@ -2,7 +2,7 @@ import "./App.css";
 import "./components/Darkmode/darkmode.css";
 import React, { useState } from "react";
 import Keyboard from "./components/Keyboard/Keyboard";
-import { wordList } from "./data/wordBank";
+import { wordList } from "./components/data/wordBank";
 
 const App = () => {
   function getSolution() {
@@ -170,29 +170,36 @@ const App = () => {
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
       <div className="containerApp">
-        <div className="containerTop">
-          <div className="containerDM">
-            <span
-              className="iconDM"
-              style={{ color: darkMode ? "grey" : "yellow" }}
-            >
-              ☀︎
-            </span>
-            <div className="switch-checkbox">
-              <label className="switch">
-                <input
-                  type="checkbox"
-                  onChange={() => setDarkMode(!darkMode)}
-                />
-                <span className="slider round"> </span>
-              </label>
+        <div className="containerHeader">
+          <div className="containerTop">
+            <div className="containerDM">
+              <span
+                className="iconDM"
+                style={{ color: darkMode ? "grey" : "yellow" }}
+              >
+                ☀︎
+              </span>
+              <div className="switch-checkbox">
+                <label className="switch">
+                  <input
+                    type="checkbox"
+                    onChange={() => setDarkMode(!darkMode)}
+                  />
+                  <span className="slider round"> </span>
+                </label>
+              </div>
+              <span
+                className="iconDM"
+                style={{ color: darkMode ? "#b96df7" : "grey" }}
+              >
+                ☽
+              </span>
             </div>
-            <span
-              className="iconDM"
-              style={{ color: darkMode ? "#b96df7" : "grey" }}
-            >
-              ☽
-            </span>
+            <div className="containerModal">
+              <div>
+                <span>INSERT ICON</span>
+              </div>
+            </div>
           </div>
           <div className="containerTitle">
             <h1 className="title">WORDLESITO</h1>

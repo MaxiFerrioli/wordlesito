@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { keys } from "../constants/constants";
-import "../style/keyboard.css";
+import { keys } from "../data/keys";
+import "./Keyboard.css";
 
 const Keyboard = ({ boardData, handleKeyPress }) => {
   function handleKeyboard(key) {
     //function for handling keydown eventlistner
-    if (key.key === "Enter") handleKeyPress("ENTER");
-    if (key.key === "Backspace") handleKeyPress("⌫");
+    if (key.key === "Enter") handleKeyPress("ENVIAR");
+    if (key.key === "Backspace") handleKeyPress("\u27f5");
     if (key.key.length === 1 && key.key.toLowerCase() !== key.key.toUpperCase())
       handleKeyPress(key.key.toUpperCase());
   }
