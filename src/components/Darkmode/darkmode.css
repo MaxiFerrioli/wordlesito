@@ -1,11 +1,13 @@
 .containerDM {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .inputDM {
     display: flex;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .iconDM {

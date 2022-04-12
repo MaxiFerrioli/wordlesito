@@ -27,7 +27,7 @@ const App = () => {
           <HiAdjustments />
         </button>
         <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
-          <h3>Modo nocturno</h3>
+          <h3>MODO NOCTURNO</h3>
           <div className="inputDM">
             <span
               className="iconDM"
