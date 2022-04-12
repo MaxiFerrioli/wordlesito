@@ -1,0 +1,47 @@
+/*MODALS*/
+.btn-open-modal {
+  display: flex;
+  border: none;
+  font-size: 20px;
+  transition: background-color 0.25s ease-in-out;
+  padding: 5px 5px 0;
+  
+}
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/*MODAL*/
+.modal-container {
+  position: fixed;
+  margin: 20px;
+  padding: 1rem;
+  min-width: 280px;
+  max-width: 650px;
+  min-height: 200px;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.modal-close {
+  position: absolute;
+  padding: 3px 8px;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.modal.is-open {
+  display: flex;
+}

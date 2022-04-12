@@ -32,7 +32,7 @@ body {
 }
 
 /*APP*/
-.containerApp {
+.containerIndex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,7 +46,7 @@ body {
 
 .containerTitle .title {
   font-size: 30px;
-  letter-spacing: 7px;
+  letter-spacing: 3px;
   text-align: center;
   font-weight: bold;
   font-family: 'Roboto Condensed', sans-serif;
@@ -58,6 +58,16 @@ body {
   background: none;
   color: #6aaa64;
   font-size: 38px;
+}
+
+.containerTop .containerModal {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.containerTop .containerModal div {
+  font-size: 30px;
+  cursor: pointer;
 }
 
 /*Error message*/
@@ -101,7 +111,7 @@ body {
   gap: 5px;
 }
 
-.containerCube .letter {
+.containerCube .cube-row .letter {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;

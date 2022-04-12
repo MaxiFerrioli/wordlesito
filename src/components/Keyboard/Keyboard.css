@@ -1,15 +1,15 @@
 .key-correct {
-    background: #6fbd67;
+    background-color: #6fbd67;
     color: #fff;
   }
   
   .key-present {
-    background: #d8c15a;
-    color: #fff;
+    background-color: #d8c15a;
+    color: #6fbd67;
   }
   
   .key-absent {
-    background: #8b8e8f;
+    background-color: #8b8e8f;
     color: #fff;
   }
   

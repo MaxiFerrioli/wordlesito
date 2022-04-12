@@ -1,15 +1,11 @@
 .containerDM {
     display: flex;
-    padding: 10px;
-    margin-left: 20px;
+    justify-content: space-between;
 }
 
-@media (max-width: 570px) {
-    .containerDM {
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
+.inputDM {
+    display: flex;
+    margin-top: 20px;
 }
 
 .iconDM {

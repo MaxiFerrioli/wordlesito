@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { keys } from "../data/keys";
 import "./Keyboard.css";
 
+
 const Keyboard = ({ boardData, handleKeyPress }) => {
   function handleKeyboard(key) {
     //function for handling keydown eventlistner
@@ -10,6 +11,7 @@ const Keyboard = ({ boardData, handleKeyPress }) => {
     if (key.key.length === 1 && key.key.toLowerCase() !== key.key.toUpperCase())
       handleKeyPress(key.key.toUpperCase());
   }
+  
   useEffect(() => {
     //Eventlistner for handling keyboard
     window.addEventListener("keydown", handleKeyboard);
